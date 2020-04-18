@@ -1,0 +1,11 @@
+FoCCJQOu2UidCSIXXMP4yP58rQd2T45XAcjknYty040EVmIAJRvl3Y - Username tested correct
+Found at EBP-40 
+
+Breakpoint set at mov edx, 0x6A3258; User Name Is - 6A3258 (above long name)
+Address on find was 006A13A4, which is 006A000 + 13A4 in case of ASLR
+Username was loaded into x32 
+
+HP1z7ezzBpiplws8yThEsVM7189aKNcjqKunZfIxjpwzoA33iT8RFz2ghlLbRNaH5wpfQ66sjcKRj8QdvtmN3PPffThkPDOEPPpRUB0 - password tested correct
+
+Found the password sitting in the stack when I went to test the username and clicked run. 
+
