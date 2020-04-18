@@ -1,9 +1,18 @@
+lvl1 - patch all checks
+Done @ Lines x-x
+
+lvl2 - patch only srand and find name with password
+Haven't patched srand, but will look into next
+
+lvl3 - find name and password without patching
+Done @ Lines x-x
+
 FoCCJQOu2UidCSIXXMP4yP58rQd2T45XAcjknYty040EVmIAJRvl3Y - Username tested correct
 Found at EBP-70 
 
 Breakpoint set at mov edx, 0x6A3258; User Name Is - 6A3258 (above long name)
 Address on find was 006A13A4, which is 006A000 + 13A4 in case of ASLR
-Username was loaded into x32 
+Username was loaded into x32 showing at EPB-70 
 
 HP1z7ezzBpiplws8yThEsVM7189aKNcjqKunZfIxjpwzoA33iT8RFz2ghlLbRNaH5wpfQ66sjcKRj8QdvtmN3PPffThkPDOEPPpRUB0 - password tested correct
 
@@ -14,9 +23,9 @@ Found the password sitting in the stack when I went to test the username and cli
 Found another username - mb4ws1nIb71sQYb6NYEXcPWjaVzJcELorViuVDppZc
 Password - qDLCe3rFlk7VEsF6c5QHfoifRN4zGMg2R1SBCBI2BxwLbUbZqHQmBpt3mAM1ATpdfzOOc4pYeu
 
-3rd run through another set... Generates each time the program is ran.
+3rd run through another set... Generates each time the program is ran. Read the tasks, found it says srand... Derp.
 
-Patching Locations
+Patching Locations Task 1 - Done
 006A13D0 - 84 > 85 - JE > JNE Username bypass
 006A1443 - 75 > 74 - JNE > JE Password bypass
 
