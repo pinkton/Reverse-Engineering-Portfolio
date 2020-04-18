@@ -1,0 +1,27 @@
+StyLE's CrackME (31.03.2020)
+
+Author:
+StyLE
+
+Language:
+C/C++
+
+Upload:
+7:56 AM 03/31/2020
+
+Level:
+2
+
+Platform
+Windows
+
+Description
+
+It's my first public crackme :)
+
+Description: ----
+
+Tascs:
+lvl1 - patch all checks
+lvl2 - patch only srand and find name with password
+lvl3 - find name and password without patching
