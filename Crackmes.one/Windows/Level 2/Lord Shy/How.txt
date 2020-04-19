@@ -1,0 +1,16 @@
+Patch debugger check call
+0000104B:75->74 - JNE > JE
+
+- Loop check -
+First character is not subject to bitshift. 
+
+User input is bit shifted right by 0xD amount (13)
+Then character is added into rdi
+Next character is loaded, ror the edi, add hex code of character
+
+End key is F6C53333 @ 0000121C
+
+F6C53333 = 11110110 11000101 00110011 00110011
+Bitshift left 15 to get;
+
+8 Characters long? 
