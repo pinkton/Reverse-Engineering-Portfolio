@@ -1,0 +1,18 @@
+Author:
+LordShy
+
+Language:
+Assembler
+
+Upload:
+11:51 AM 03/29/2020
+
+Level:
+2
+
+Platform
+Windows
+
+Description
+
+You need find one valid serial. Enjoy!
