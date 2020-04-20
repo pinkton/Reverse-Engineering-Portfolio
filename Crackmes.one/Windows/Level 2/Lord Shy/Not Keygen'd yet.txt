@@ -1,5 +1,8 @@
 Patch debugger check call
 0000104B:75->74 - JNE > JE
+000020DF:01 is set by debugger, forcing constant failure
+0000122B:01->00 - cmp, 1 > cmp, 0 to bypass debugger bit
+
 
 - Loop check -
 First character is not subject to bitshift. 
@@ -11,6 +14,18 @@ Next character is loaded, ror the edi, add hex code of character
 End key is F6C53333 @ 0000121C
 
 F6C53333 = 11110110 11000101 00110011 00110011
-Bitshift left 15 to get;
+Last digit of serial is 3, 
+00000000 00000000 00000000 01010010 = R
+00000010 10010000 00000000 00000000 = ROR'd 
+00000010 10010000 00000000 01111010 = + z
+00000011 11010000 00010100 10000000 = ROR'd
+00000011 11010000 00010100 11001100 = + L
+10100110 01100000 00011110 10000000 = ROR'd
+10100110 01100000 00011110 11011000 = + X
+11110110 11000101 00110011 00000000 = ROR'd
+11110110 11000101 00110011 00110011 = + 3
+11110110 11000101 00110011 00110011 = F6C53333 (cmp hex) 
 
-8 Characters long? 
+
+Manually got a working key (more by luck)
+RzLX3 - 
