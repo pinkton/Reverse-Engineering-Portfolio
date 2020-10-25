@@ -1,0 +1,8 @@
+This file is a genuine encryption file. It loads your %Users% folder, starting with My Documents, My Music, My Videos, My Pictures, file by file within each folder.
+
+I mean it, it WILL encrypt your files with .meow suffix but ONLY when you skip the checks in place to prevent it from happening, aka you make it play. 
+If in doubt, breakpoint cryptencrypt which is the main function involved with encrypting files. 
+
+IsDebugger x2 checks in place to prevent mindlessness, but after that, you're left to your own problems if you make a mistake
+
+File for zip is ENCRYPTION MEOW HURTS ME with no spaces!
