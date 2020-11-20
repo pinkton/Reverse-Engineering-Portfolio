@@ -1,0 +1,63 @@
+//CTF Demo 1 - checked online, works!
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main()
+{
+	string Flag = "PRET(Pinks_First_Tut_Flag)";
+	string Hero = "F1R5T_GU35s";
+	string Quest;
+	cout << "What's the password?\n";
+	cin >> Quest;
+	if (Quest == Hero) {
+		cout << Flag;
+	} else {
+		cout << "Nah, no flag for you!\n";
+		main();
+	}
+}
+
+//CTF Demo 2 - Trialed online, works
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main()
+{
+	string Flag = "PRET(Pinks_Sec0nd_Tut_Flag)";
+	string Hero = "S3C0Nd_";
+	string HERO = "4TT3MP7";
+	string steed = Hero+HERO;
+	string Quest;
+	cout << "What's the password?\n";
+	cin >> Quest;
+	if (Quest == steed) {
+		cout << Flag;
+	} else {
+		cout << "Nah, no flag for you!\n";
+		main();
+	}
+}
+
+//CTF Demo 3 - Ninja 2nd call
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main()
+{
+	string Flag = "PRET(Pinks_ThiRD_Tut_Flag)";
+	string Hero = "IS_IT_ME_";
+	string HERO = "YOU_LOOKIN_4";
+	string steed = Hero+HERO;
+	string Quest;
+	cout << "What's the password?\n";
+	cin >> Quest;
+	if (Quest == steed) {
+		cout << Flag;
+	} else {
+		cout << "Nah, no flag for you!\n";
+		main();
+	}
+}
