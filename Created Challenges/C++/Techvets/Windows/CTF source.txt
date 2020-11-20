@@ -3,7 +3,12 @@
 #include <string>
 using namespace std;
 
-int main()
+void try_again(void)
+{
+	cout << "Nah, no flag for you!\n";
+}
+
+int flag()
 {
 	string Flag = "PRET(Pinks_First_Tut_Flag)";
 	string Hero = "F1R5T_GU35s";
@@ -11,30 +16,42 @@ int main()
 	cout << "What's the password?\n";
 	cin >> Quest;
 	if (Quest == Hero) {
+		cout << "Have a cookie, and a flag\n";
 		cout << Flag;
-	} else {
-		cout << "Nah, no flag for you!\n";
-		main();
+	}
+	else {
+		atexit(try_again);
+		exit(0);
 	}
 }
 
-//CTF Demo 2 - Trialed online, works
+int main()
+{
+	flag();
+}
+
+//CTF Demo 2 - Pending completion
 #include <iostream>
-#include <string>
+#include <sstream>
+
 using namespace std;
 
 int main()
 {
-	string Flag = "PRET(Pinks_Sec0nd_Tut_Flag)";
-	string Hero = "S3C0Nd_";
-	string HERO = "4TT3MP7";
-	string steed = Hero+HERO;
-	string Quest;
+	string Flag_1 = "PRET(";
+	string Flag_3 = ")";
+	string half_1 = "S3C0Nd_";
+	string half_2 = "4TT3MP7";
+	string complete = half_1 + half_2;
+	string question;
+	string hex = "50696e6b735f536563306e645f5475745f466c6167";
+	unsigned int Flag_2 = std::stoul(hex, nullptr, 16);
 	cout << "What's the password?\n";
-	cin >> Quest;
-	if (Quest == steed) {
-		cout << Flag;
-	} else {
+	cin >> question;
+	if (question == complete) {
+		cout << Flag_1 + Flag_2+Flag_3;
+	}
+	else {
 		cout << "Nah, no flag for you!\n";
 		main();
 	}
