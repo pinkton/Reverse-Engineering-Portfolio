@@ -1,4 +1,4 @@
-//CTF Demo 1 - Works
+//CTF Demo 1 - PRET(Pinks_First_Tut_Flag)
 #include <stdio.h>
 #include <string.h>
 
