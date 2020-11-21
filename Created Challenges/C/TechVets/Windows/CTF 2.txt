@@ -1,0 +1,25 @@
+//CTF Demo 2 - Strlen kinda works
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+	char guess[10];
+	char hidden[] = "ABCDEF123456";
+	char passme[6] = "BUILD";
+	int cmp;
+	printf("Enter the password : ");
+	fgets(guess, 6, stdin);
+	size_t lenguess = strlen(guess);
+	printf("Guess length: %d", lenguess);
+	if (lenguess < 6) {
+		printf("\nNo cookie for you!\n");
+	}
+	else if (lenguess == 6) {
+		printf("Have a cookie, and a flag\n");
+		printf("PRET(Pinks_First_Tut_Flag)");
+		return 0;
+	}	else if (lenguess > 6) {
+		printf("\nNo cookie for you!\n");
+	}
+	main();
+}
