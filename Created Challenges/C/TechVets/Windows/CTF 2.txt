@@ -1,4 +1,4 @@
-//CTF Demo 2 - Strlen kinda works
+//CTF Demo 2 - PRET(P1NK_H1D35_CE36_F14G5)
 #include <stdio.h>
 #include <string.h>
 
