@@ -1,0 +1,23 @@
+//CTF Demo 1 - Works
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+	char guess[12] = "0";
+	char answer[] = "F1R5T_GU35s";
+	int cmp;
+	printf("Enter the password : ");
+	fgets(guess, sizeof(guess), stdin);
+	cmp = strcmp(guess, answer);
+	if (cmp < 0) {
+		printf("\nNo cookie for you!\n");
+		main();	
+	}	else if (cmp > 0) {
+		printf("\nNo cookie for you!\n");
+		main();
+	}	else {
+		printf("Have a cookie, and a flag\n");
+		printf("PRET(Pinks_First_Tut_Flag)");
+		return 0;
+	}
+}
