@@ -4,20 +4,28 @@
 
 int main() {
 	char guess[10];
-	char hidden[] = "ABCDEF123456";
-	char passme[6] = "BUILD";
-	int cmp;
+	char hidden[13] = "ABCDEF123456";
+	char passme[7] = "ABC123";
+	char half_flag[17] = "PRET(P1NK_H1D35_";
 	printf("Enter the password : ");
-	fgets(guess, 6, stdin);
+	fgets(guess, 10, stdin);
+	guess[strlen(guess) - 1] = '\0'; // Removes the \n on fgets and allows genuine compares
 	size_t lenguess = strlen(guess);
-	printf("Guess length: %d", lenguess);
+
+	// Checks guess length. If < or > 6, fails. If 6, checks if valid answer.
 	if (lenguess < 6) {
 		printf("\nNo cookie for you!\n");
 	}
+
 	else if (lenguess == 6) {
-		printf("Have a cookie, and a flag\n");
-		printf("PRET(Pinks_First_Tut_Flag)");
-		return 0;
+		if (strcmp(guess, passme) == 0) {
+			printf("Have a cookie, and half a flag\n");
+			printf("Is has been said that _%c%c%c%c_F14G5) is the answer you're looking for\n", hidden[2], hidden[4], hidden[8], hidden[11]); //CE36 output
+			return 0;
+		}
+		else {
+			printf("\nNo cookie for you!\n");
+		}
 	}	else if (lenguess > 6) {
 		printf("\nNo cookie for you!\n");
 	}
