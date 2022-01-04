@@ -25,7 +25,7 @@ At the bottom of the above picture, you can see the lines that setup the passwor
 
 Now this is where the application has been created with the ending first, then the introduction as an after thought due to the way that the ID's have been numbered within DNspy. Given it's a crackme, this isn't overly surprising, as the creator possibly wanted to test that the code worked first, before giving it an asthetic look.
 
-https://github.com/pinkton/Reverse-Engineering-Portfolio/blob/master/Crackmes.one/Windows/Level 1.2/Photos - Answer.jpg
+https://github.com/pinkton/Reverse-Engineering-Portfolio/blob/master/Crackmes.one/Windows/Level%201.2/Answer.jpg
 https://github.com/pinkton/Reverse-Engineering-Portfolio/blob/master/Crackmes.one/Windows/Level 1.2/Photos - Initial text.jpg
 
 From the above, we can see that the answer to the login is hard coded in clear text thankfully, so no trickery required to figure out. However, this could be a red herring, so loading up the challenge again and inputting the username and password to confirm whether we get the "Success!" message box or not..... And we do!
