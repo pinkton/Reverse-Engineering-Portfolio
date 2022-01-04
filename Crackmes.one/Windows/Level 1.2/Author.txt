@@ -1,0 +1,27 @@
+https://crackmes.one/crackme/6196707833c5d455dece6165
+
+Author:
+JustMiraii
+
+Language:
+C/C++
+
+Upload:
+3:25 PM 11/18/2021
+
+Level:
+1.2
+
+Platform:
+Windows
+
+Description:
+A really simple Visual C++ crackme with username and password :D
+
+WARNING HINT!!!
+
+*Removed numerous new lines*
+
+username is 19 chars long
+
+password is 16 chars long
