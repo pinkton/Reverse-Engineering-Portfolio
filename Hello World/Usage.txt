@@ -1,0 +1,6 @@
+[Input] Helloworld.exe <string>
+[Output] Hello: <string>
+
+[--] Example [--]
+[In] .\Helloworld.exe pinky
+[Out] Hello: pinky

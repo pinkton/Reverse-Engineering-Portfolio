@@ -1,0 +1,6 @@
+[Input] .\lief_pe64_hooking.exe <string>
+[Output] MessageBox.jpg
+
+[--] Example [--]
+[In] .\lief_pe64_hooking.exe pinky
+[Out] MessageBox.jpg
